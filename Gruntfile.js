@@ -66,7 +66,17 @@ module.exports = function(grunt) {
       }
     },
 
-   // //copy: {
+    copy: {
+      bsGlypphicons: {
+        files: [
+          {
+            expand: true,
+            cwd: 'node_modules/bootstrap/fonts',
+            src: ['**'],
+            dest: 'www/fonts'
+          },
+        ]
+      }
     //  // copy font-awesome fonts for website use
     //  fontAwesome: {
     //    files: [
@@ -78,7 +88,7 @@ module.exports = function(grunt) {
     //      },
     //    ]
     //  }
-    //},
+    },
 
    // ///**
     // * Deploy to production server
@@ -143,8 +153,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   //grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  /*grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-ftp-push');*/
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  //grunt.loadNpmTasks('grunt-ftp-push');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('deploy', ['ftp_push']);//[ 'less', 'uglify', 'imagemin', 'copy']);
