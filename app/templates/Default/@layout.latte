@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bačisovi to jde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/bacisovi-tode.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="./img/js-superhero_v1.png" alt="JS superhero" title="JS superhero" class="img-responsive" />
+          </div>
+          <div class="col-lg-9">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-4">
+            {include './components/menu.latte'}
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-8">
+            {block content}{/block}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

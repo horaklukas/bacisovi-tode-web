@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      bsGlypphicons: {
+      bsGlyphicons: {
         files: [
           {
             expand: true,
