@@ -2,6 +2,7 @@ node_modules/
 vendor/
 css/
 fonts/
+js/
 
 temp/*
 !temp/.htaccess

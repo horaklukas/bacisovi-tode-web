@@ -3,6 +3,7 @@
     die('Install Nette using `composer update`');
   }
 
+  define('WWW_DIR', __DIR__);
   define('APP_DIR', __DIR__.'/../app');
 
   $configurator = new Nette\Configurator;
