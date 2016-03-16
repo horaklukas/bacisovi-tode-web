@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      bsGlypphicons: {
+      bsGlyphicons: {
         files: [
           {
             expand: true,
@@ -158,5 +158,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('deploy', ['ftp_push']);//[ 'less', 'uglify', 'imagemin', 'copy']);
-  grunt.registerTask('default', [ 'less', 'uglify', 'imagemin', 'copy', 'watch']);
+  //grunt.registerTask('default', [ 'less', 'uglify', 'imagemin', 'copy', 'watch']);
+  grunt.registerTask('default', [ 'less', 'imagemin', 'copy', 'watch']);
 };

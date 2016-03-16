@@ -1,0 +1,25 @@
+{layout '../@layout.latte'}
+
+{block content}
+  <h1>Countdowner</h1>
+
+  <p>
+    Countdown timer on your web. Interactive countdown since any date in future
+  </p>
+
+  <p>
+    <a href="https://github.com/horaklukas/countdowner" target="_blank">
+      <span class="glyphicon glyphicon-link" aria-hidden="true"></span> GitHub repository
+    </a>
+  </p>
+
+  <h2>Examples of use</h2>
+
+  <h4>Odpočet 24 hodin</h4>
+  <script src="{link Countdowner:get}?date={$date24h}&amp;color=red&margin=10px"></script>
+
+  <h4>Odpočet 30 minut</h4>
+  <script src="{link Countdowner:get}?date={$date30min}&amp;backgroundColor=green&padding=10px"></script>
+
+  <h4>Odpočet 5 minut</h4>
+  <script src="{link Countdowner:get}?date={$date5min}&amp;color=%23ff0&amp;backgroundColor=%2300f"></script>
