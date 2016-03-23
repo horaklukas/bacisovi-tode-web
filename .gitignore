@@ -8,3 +8,6 @@ temp/*
 !temp/.htaccess
 log/*
 !log/.htaccess
+
+# standalone app
+www/cookery-book

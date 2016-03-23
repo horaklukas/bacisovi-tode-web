@@ -1,14 +1,17 @@
 <div class="list-group table-of-contents">
-  <a class="list-group-item" n:href="Default:default">
+  <a class="list-group-item {ifCurrent Default:default} active{/ifCurrent}"
+    n:href="Default:default">
     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
     Intro
   </a>
 
-  <a class="list-group-item" href="/cookery-book">
+  <a class="list-group-item {ifCurrent CookeryBook:default} active{/ifCurrent}"
+    n:href="CookeryBook:default">
     <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
     Cookery book
   </a>
-  <a class="list-group-item" n:href="Countdowner:default">
+  <a class="list-group-item {ifCurrent Countdowner:default} active{/ifCurrent}"
+    n:href="Countdowner:default">
     <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
     Countdowner
   </a>
