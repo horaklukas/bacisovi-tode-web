@@ -1,23 +1,32 @@
 {layout '../@layout.latte'}
 
 {block content}
-  <p>
-    Countdown timer on your web. Interactive countdown since any date in future
-  </p>
+  <div class="row text-center">
 
-  <p>
-    <a href="https://github.com/horaklukas/countdowner" target="_blank">
-      <span class="glyphicon glyphicon-link" aria-hidden="true"></span> GitHub repository
-    </a>
-  </p>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2>About</h2>
 
-  <h2>Examples of use</h2>
+      Countdown timer on your web. Interactive countdown since any date in future
 
-  <h4>Odpočet 24 hodin</h4>
-  <script src="{link Countdowner:get}?date={$date24h}&amp;color=red&margin=10px"></script>
+      <a href="https://github.com/horaklukas/countdowner" target="_blank">
+        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> repository
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2>Examples</h2>
 
-  <h4>Odpočet 30 minut</h4>
-  <script src="{link Countdowner:get}?date={$date30min}&amp;backgroundColor=green&padding=10px"></script>
+      <h4>Odpočet 24 hodin</h4>
+      <script src="{link Countdowner:get}?date={$date24h}&amp;color=red&margin=10px"></script>
 
-  <h4>Odpočet 5 minut</h4>
-  <script src="{link Countdowner:get}?date={$date5min}&amp;color=%23ff0&amp;backgroundColor=%2300f"></script>
+      <h4>Odpočet 30 minut</h4>
+      <script src="{link Countdowner:get}?date={$date30min}&amp;backgroundColor=green&padding=10px"></script>
+
+      <h4>Odpočet 5 minut</h4>
+      <script src="{link Countdowner:get}?date={$date5min}&amp;color=%23ff0&amp;backgroundColor=%2300f"></script>
+
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2>Generator</h2>
+    </div>
+
+  </div>

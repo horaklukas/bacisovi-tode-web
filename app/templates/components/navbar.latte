@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li {ifCurrent Default:default}class="active"{/ifCurrent}>
+          <a n:href="Default:default">
+            <span class="glyphicon glyphicon-home"></span> Intro
+          </a>
+        </li>
+
+        <li {ifCurrent CookeryBook:default}class="active"{/ifCurrent}>
+          <a n:href="CookeryBook:default">
+            <span class="glyphicon glyphicon-leaf"></span> Cookery book
+          </a>
+        </li>
+
+        <li {ifCurrent Countdowner:default}class="active"{/ifCurrent}>
+          <a n:href="Countdowner:default">
+            <span class="glyphicon glyphicon-time"></span> Countdowner
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="social">
+          <a href="http://github.com/horaklukas" target="_blank"
+            title="My GitHub" alt="GitHub">
+            <span class="fa fa-github"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

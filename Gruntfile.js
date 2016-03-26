@@ -67,6 +67,7 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      // copy bootstrap fonts for website use
       bsGlyphicons: {
         files: [
           {
@@ -76,18 +77,18 @@ module.exports = function(grunt) {
             dest: 'www/fonts'
           },
         ]
+      },
+      // copy font-awesome fonts for website use
+      fontAwesome: {
+        files: [
+          {
+            expand: true,
+            cwd: 'node_modules/font-awesome/fonts',
+            src: ['**'],
+            dest: 'www/fonts'
+          },
+        ]
       }
-    //  // copy font-awesome fonts for website use
-    //  fontAwesome: {
-    //    files: [
-    //      {
-    //        expand: true,
-    //        cwd: 'node_modules/font-awesome/fonts',
-    //        src: ['**'],
-    //        dest: 'www/fonts'
-    //      },
-    //    ]
-    //  }
     },
 
    // ///**

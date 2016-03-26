@@ -13,19 +13,11 @@
     <![endif]-->
   </head>
   <body>
-
+    {include 'components/navbar.latte'}
     {include 'components/page-header.latte'}
+
     <div class="container">
-
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-4">
-          {include 'components/menu.latte'}
-        </div>
-        <div class="col-lg-9 col-md-9 col-sm-8">
-          {block content}{/block}
-        </div>
-      </div>
-
+      {block content /}
     </div>
   </body>
 </html>

@@ -6,7 +6,6 @@
 @import "node_modules/bootstrap/less/variables.less";
 @import "node_modules/bootstrap/less/mixins.less";
 
-@import "node_modules/bootswatch/superhero/variables.less";
 @import "variables.less";
 
 // Reset and dependencies
@@ -60,11 +59,11 @@
  * Font awesome
  */
 
-//@import "node_modules/font-awesome/less/variables.less";
-//@import "node_modules/font-awesome/less/mixins.less";
-//@import "node_modules/font-awesome/less/path.less";
-//@import "node_modules/font-awesome/less/core.less";
-//@import "node_modules/font-awesome/less/larger.less";
+@import "node_modules/font-awesome/less/variables.less";
+@import "node_modules/font-awesome/less/mixins.less";
+@import "node_modules/font-awesome/less/path.less";
+@import "node_modules/font-awesome/less/core.less";
+@import "node_modules/font-awesome/less/larger.less";
 //@import "node_modules/font-awesome/less/fixed-width.less";
 //@import "node_modules/font-awesome/less/list.less";
 //@import "node_modules/font-awesome/less/bordered-pulled.less";
@@ -72,14 +71,16 @@
 
 //@import "node_modules/font-awesome/less/rotated-flipped.less";
 //@import "node_modules/font-awesome/less/stacked.less";
-//@import "node_modules/font-awesome/less/icons.less";
+@import "node_modules/font-awesome/less/icons.less";
 
 
-//@import "components/navbar.less";
 //@import "components/carousel.less";
 //@import "content.less";
 //@import "components/footer.less";
 
-@import "node_modules/bootswatch/superhero/bootswatch.less";
-
+@import "components/navbar.less";
 @import "components/page-header.less";
+
+@import "templates/countdowner.less";
+
+@import url("https://fonts.googleapis.com/css?family=@{main-font}:300,400,700");
