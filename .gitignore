@@ -3,6 +3,7 @@ vendor/
 css/
 fonts/
 js/
+img/
 
 temp/*
 !temp/.htaccess
